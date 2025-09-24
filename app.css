@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 750px;  
+    width: 100%; 
+    padding: 60px 10px;
+    overflow: visible;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.child h1 {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.child p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 29px;
+}
+
+.tombol {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: flex-start;
+    gap: 8px;
+
+}
+
+.tombol button {
+    border: none;
+}
+
+.tombol .btn {
+    width: auto;
+    font-size: 14px;
+    padding: 8px 25px;
+    background: black;
+    border-radius: 40px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.btn-outline {
+    margin-top: 5px;
+    padding: 10px 10px;
+    font-weight: 700;
+    background: whitesmoke;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    background: black;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.btn-outline i {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.icons i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    background: black;
+    color: whitesmoke;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+.icons i:hover {
+    transform: translateY(5px);
+}
+
+.container-image {
+    width: 100%;
+    background: whitesmoke;
+    box-shadow: 0 10px 9px rgba(0, 0, 0, .2);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.container-image img {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.container-image h3 {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.container-image p {
+    text-transform: capitalize;
+}
