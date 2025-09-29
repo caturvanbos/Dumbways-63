@@ -1,0 +1,509 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .nav-item {
+    padding: 6px 12px;
+    border-radius: 10px;
+  }
+  
+  .nav-item:hover {
+    background: orangered;
+  } 
+
+.text-orange {
+    color: orangered;
+    font-weight: 900;
+    font-size: 44px;
+}
+
+.new-bg {
+    background: rgb(238, 238, 238);
+}
+
+.nav-link {
+    color: black !important;
+    font-size: 20px;
+}
+
+.my-profile {
+    background: rgb(207, 207, 207);
+    min-height: 100vh;  
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 0; 
+  }
+  
+.profile-container {
+    background: white;
+    width: 85%;
+    margin: auto;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.wrapper h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .wrapper p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .container-button .black {
+    background: black;
+    color: white;
+    padding: 6px 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+  }
+
+  .container-button button:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
+
+
+  .container-button .download-cv {
+    color: black;
+    padding: 6px 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.icons i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    background: black;
+    color: whitesmoke;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+.container-button .download-cv i {
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+.icons i:hover {
+    transform: translateY(5px);
+}
+
+.container-img {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    padding: 8px;
+}
+  
+  .gambar img {
+    max-width: 290px;
+    border-radius: 10px;
+  }
+  
+  .gambar p {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  
+/*  ========= FORM ========== */
+
+/* form {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background: rgb(216, 216, 216);
+}
+
+.form-container {
+    display: flex;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+    flex-direction: column;
+    margin: 4rem auto;
+}
+
+form .form-container h1 {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form .form-container label {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+form .form-container input,textarea {
+    border: none;
+    padding: 8px 30px;
+    background: white;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 5px 2px rgba(0,0,0,0.1);
+}
+
+form .form-container .form-button {
+    display: flex;
+    justify-content: right;
+    margin-top: 2rem;
+}
+
+form .form-container .form-button button {
+    border: none;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 4px 35px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+form .form-container .form-button button:hover {
+    background: rgb(0, 0, 56);
+    transform: translateY(-2px);
+} */
+
+/* ======== FORM =========== */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e6ebf0;  /* abu muda biar elegan */
+}
+
+/* FORM UTAMA */
+.main-form {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+  align-items: center;
+}
+
+.main-form h1 {
+  font-size: 34px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.container-project {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.main-form .container-project label {
+  font-size: 21px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.main-form .container-project input,textarea {
+  border: none;
+  outline: none;
+  background: white;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+  padding: 8px 25px;
+  border-radius: 6px;
+}
+
+.container-project .row {
+  display: flex;
+}
+
+.container-project .row .col {
+  padding: 3rem 0;
+}
+
+/* === technologies ==== */
+
+.technlogies {
+  display: flex;
+}
+
+.tech-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 1.7rem;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+}
+
+.tech-checkbox {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.tech-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 22px;
+  color: #4a4a4a;
+  user-select: none;
+}
+
+.tech-label .box {
+  display: inline-block;
+  position: relative;
+  height: 24px;
+  width: 24px;
+  background: white;
+  box-shadow: 3px 4px 4px rgba(0,0,0,0.2);
+}
+
+.tech-checkbox:checked + .tech-label .box::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  width: 8px;
+  height: 14px;
+  border: solid #222;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* === FILE INPUT === */
+
+.form-section {
+  margin-top: 1.7rem;
+}
+
+.file-input-wrapper {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  padding: 12px 60px 12px 120px;
+  min-height: 56px;
+  box-sizing: border-box;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-btn {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #eee;
+  color: #9b9b9b;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,0.04);
+  user-select: none;
+}
+.file-icon {
+  position: absolute;
+  right: 20px;
+  font-size: 24px;
+}
+
+.file-btn:hover {
+  background: rgb(211, 211, 211);
+}
+
+.form-button {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 3rem;
+}
+
+.btn-submit {
+  background: #0b1120;
+  color: whitesmoke;
+  border: none;
+  padding: 12px 45px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+/* ==== my project ==== */
+
+.my-projects h1 {
+  font-size: 43px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem 0
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  width: 350px;
+  padding: 12px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.project-card .desc {
+  line-height: 1.4;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  font-size: 19px;
+  font-weight: 600;
+  padding: .5rem 0;
+  text-transform: capitalize;
+}
+
+.project-card .duration {
+  color: #4e4e4e;
+}
+
+.project-card .tech-icons {
+  font-size: 27px;
+  display: flex;
+  gap: 1rem;
+  padding-top: .4rem;
+}
+
+.project-card .tech-icons i {
+  color: black;
+}
+
+.project-card .card-buttons {
+  display: flex;
+  gap: .8rem;
+  padding-top: .6rem;
+  justify-content: space-between;
+}
+
+.project-card .card-buttons button {
+  display: grid;
+  flex: 1;
+  border-radius: 8px;
+  background: rgb(0, 0, 20);
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* === PROJECT DETAIL === */
+
+.project-detail {
+  padding: 3rem 6rem;
+}
+
+
+.project-detail h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.detail-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.detail-left img {
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+
+.detail-right {
+  flex: 1;
+}
+
+.detail-right h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: .6rem;
+  text-transform: capitalize;
+}
+
+.tech-list {
+  display: flex;
+  gap: 3rem;
+}
+
+.detail-right p {
+  font-size: 22px;
+  margin-bottom: .6rem;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.detail-right i {
+  font-size: 30px;
+  color: black;
+}
