@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>add my project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark new-bg">
+    <div class="container-fluid d-flex justify-content-between">
+
+      <!-- Logo / Brand -->
+      <a class="navbar-brand text-orange" href="#">DU</a>
+
+      <!-- Toggle button untuk mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto ms-3 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Project</a>
+          </li>
+        </ul>
+
+        <!-- Tombol Contact -->
+        <form class="d-flex me-3">
+          <button class="btn btn-outline-light bg-dark text-light rounded px-3 py-2" type="button">Contact Me</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FORM ADD MY PROJECT -->
+  <!-- Bagian FORM ADD MY PROJECT -->
+<form class="main-form" onsubmit="addProject(event)"> <!-- Tambahkan onsubmit ini -->
+  <h1>add my project</h1>
+
+  <div class="container-project">
+    <label for="projectName">name</label>
+    <input type="text" id="projectName" required> <!-- Tambahkan id dan required -->
+
+    <div class="row">
+      <div class="col">
+        <label for="startDate">start date</label>
+        <input type="date" id="startDate" required> <!-- Ubah type ke date dan tambahkan id -->
+      </div>
+
+      <div class="col">
+        <label for="endDate">end date</label>
+        <input type="date" id="endDate" required> <!-- Ubah type ke date dan tambahkan id -->
+      </div>
+    </div>
+
+      <label for="description">description</label>
+      <textarea name="" id="description" cols="30" rows="10" required></textarea> <!-- Tambahkan id dan required -->
+
+    <div class="technologies">
+
+      <h3 class="tech-title">technologies</h3>
+
+      <div class="tech-grid">
+
+        <div class="tech-item">
+          <input id="tech-node" type="checkbox" class="tech-checkbox" value="Node JS"> <!-- Tambahkan value -->
+          <label for="tech-node" class="tech-label"><span class="box"></span><span class="tech-name">Node
+              JS</span></label>
+        </div>
+
+        <div class="tech-item">
+          <input id="tech-next" type="checkbox" class="tech-checkbox" value="Next JS"> <!-- Tambahkan value -->
+          <label for="tech-next" class="tech-label"><span class="box"></span><span class="tech-name">Next
+              JS</span></label>
+        </div>
+
+        <div class="tech-item">
+          <input id="tech-react" type="checkbox" class="tech-checkbox" value="React Js"> <!-- Tambahkan value -->
+          <label for="tech-react" class="tech-label"><span class="box"></span><span class="tech-name">React
+              Js</span></label>
+        </div>
+
+        <div class="tech-item">
+          <input id="tech-ts" type="checkbox" class="tech-checkbox" value="TypeScript"> <!-- Tambahkan value -->
+          <label for="tech-ts" class="tech-label"><span class="box"></span><span
+              class="tech-name">TypeScript</span></label>
+        </div>
+
+      </div>
+
+      <!-- === FILE UPLOAD === -->
+
+      <div class="form-section">
+        <label class="section-title" for="projectImage">Upload Image</label> <!-- Ubah id -->
+
+        <div class="file-input-wrapper">
+          <input id="projectImage" type="file" accept="image/*" class="file-input"> <!-- Ubah id -->
+
+          <label for="projectImage" class="file-btn">choose</label>
+          <span class="file-display" id="fileName">no file choose</span> <!-- Tambahkan id -->
+          <i class="fa-solid fa-paperclip file-icon" aria-hidden="true"></i>
+
+        </div>
+
+      </div>
+
+      <div class="form-button">
+        <button type="submit" class="btn-submit">submit</button>
+      </div>
+
+    </div>
+  </div>
+</form>
+
+
+<!-- ==== MY PROJECT ==== -->
+
+<section class="my-projects">
+
+  <h1>my project</h1>
+
+  <div class="project-list">
+
+    <div class="project-card" onclick="window.location.href='project-detail.html'">
+      <img src="gambar/1.jpg" alt="gambar belum muncul">
+      <h3>dumbways mobile app 2021</h3>
+      <p class="duration">durasi : 3 bulan</p>
+      <p class="desc">
+        App that used for dumbways student, it was deployed and can be downloaded on playstore. Happy download.
+      </p>
+      <div class="tech-icons">
+        <i class="fa-brands fa-android"></i>
+        <i class="fa-brands fa-java"></i>
+        <i class="fa-brands fa-js"></i>
+      </div>
+
+      <div class="card-buttons">
+        <button class="btn-edit">edit</button>
+        <button class="btn-delete">delete</button>
+      </div>
+
+    </div>
+
+    <div class="project-card">
+      <img src="gambar/2.jpg" alt="gambar belum muncul">
+      <h3>dumbways mobile app 2021</h3>
+      <p class="duration">durasi : 3 bulan</p>
+      <p class="desc">
+        App that used for dumbways student, it was deployed and can be downloaded on playstore. Happy download.
+      </p>
+      <div class="tech-icons">
+        <i class="fa-brands fa-android"></i>
+        <i class="fa-brands fa-java"></i>
+        <i class="fa-brands fa-js"></i>
+      </div>
+
+      <div class="card-buttons">
+        <button class="btn-edit">edit</button>
+        <button class="btn-delete">delete</button>
+      </div>
+
+    </div>
+
+    <div class="project-card">
+      <img src="gambar/3.jpg" alt="gambar belum muncul">
+      <h3>dumbways mobile app 2021</h3>
+      <p class="duration">durasi : 3 bulan</p>
+      <p class="desc">
+        App that used for dumbways student, it was deployed and can be downloaded on playstore. Happy download.
+      </p>
+      <div class="tech-icons">
+        <i class="fa-brands fa-android"></i>
+        <i class="fa-brands fa-java"></i>
+        <i class="fa-brands fa-js"></i>
+      </div>
+
+      <div class="card-buttons">
+        <button class="btn-edit">edit</button>
+        <button class="btn-delete">delete</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="java.js"></script>
+</body>
+
+</html>

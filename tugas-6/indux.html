@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark new-bg">
+    <div class="container-fluid d-flex justify-content-between">
+      
+      <!-- Logo / Brand -->
+      <a class="navbar-brand text-orange" href="#">DU</a>
+      
+      <!-- Toggle button untuk mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto ms-3 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Project</a>
+          </li>
+        </ul>
+
+        <!-- Tombol Contact -->
+        <form class="d-flex me-3">
+            <button 
+            class="btn btn-outline-light bg-dark text-light rounded px-3 py-2" 
+            type="button" 
+            onclick="window.location.href='form.html'">
+            Contact Me
+          </button>
+          
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section class="my-profile">
+    <div class="profile-container d-flex justify-content-between align-items-center gap-5">
+      
+      <!-- Teks Kiri -->
+      <div class="wrapper me-4">
+        <h1>Hi Welcome to my hut</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, corrupti maxime itaque est deserunt voluptatum quibusdam laudantium accusantium, error excepturi quia odit quae vitae sint repellendus modi recusandae, fugiat eveniet deleniti molestias magni adipisci quos! Harum rem, dignissimos dolores maxime a, laudantium pariatur voluptatum consectetur nobis hic et sequi, quaerat sint ad architecto. Delectus quasi exercitationem ab optio eius totam et laudantium nisi aut consectetur voluptatibus magnam facere est reprehenderit, quia, perferendis velit quidem. Obcaecati sunt fugiat unde explicabo architecto temporibus eum delectus. Dignissimos sapiente debitis, harum impedit laudantium minima.</p>
+
+        <div class="container-button">
+            <button type="button" class="black">contact</button>
+            <button type="button" class="download-cv">Download CV <i class="fa-solid fa-download"></i></button>
+          </div>
+
+          <div class="icons">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+
+      </div>
+
+  
+      <!-- Gambar Kanan -->
+      <div class="container-img">
+        <div class="gambar text-center">
+            <img src="gambar/gambar.png" alt="profile" class="img-fluid rounded shadow">
+            <p><strong>Roma Irama</strong><br>Fullstack Developer</p>
+          </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
